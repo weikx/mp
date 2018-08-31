@@ -1,0 +1,19 @@
+{
+  "name": "mp",
+  "version": "1.0.0",
+  "description": "mini program",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weikx/mp.git"
+  },
+  "author": "weikexin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weikx/mp/issues"
+  },
+  "homepage": "https://github.com/weikx/mp#readme"
+}
