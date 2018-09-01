@@ -3,11 +3,11 @@
     "pages/classic/classic"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#FFFF00",
+    "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTitleText": "demo",
     "navigationBarTextStyle": "black",
     "navigationStyle": "default",
-    "backgroundColor": "red",
+    "backgroundColor": "#FFFFFFS",
     "enablePullDownRefresh": true
   }
 }
