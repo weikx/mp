@@ -1,1 +1,5 @@
-<w-like />
+<view class="header">
+  <w-epsoide index="{{classic.index}}" class="epsolid"/>
+  <w-like bind:like="onLike" liked="{{classic.like_status}}" count="{{classic.fav_nums}}" class="like" />
+</view>
+<w-movie img="{{classic.image}}" content="{{classic.content}}" />
