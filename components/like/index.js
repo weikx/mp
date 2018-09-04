@@ -25,6 +25,7 @@ Component({
    */
   methods: {
     onLike (event) {
+      wx.vibrateShort()
       let liked = this.properties.liked
       let count = this.properties.count
 
@@ -33,6 +34,11 @@ Component({
         count: count,
         liked: !liked
       })
+      
+      let behavior = this.properties.liked ? 'like' : 'cancel'
+      this.triggerEvent('like', {
+        behavior: behavior
+      }, {})
     }
   }
 })
