@@ -16,15 +16,16 @@ class HTTP {
   request (params) {
     wx.request({
       url: HTTP_CONFIG.baseUrl + params.url,
-      method: HTTP_CONFIG.method || 'GET',
+      method: params.method || 'GET',
+      data: params.data,
       header: {
         'content-type': 'application/json',
         'appkey': HTTP_CONFIG.appKey
       },
       success: (res) => {
         let code = res.statusCode.toString()
-        if (code.startsWith('2', 0)) {
-          params.success(res)
+        if (code.startsWith('2')) {
+          params.success && params.success(res.data)
         } else {
           this.httpError(res.data.error_code)
         }
